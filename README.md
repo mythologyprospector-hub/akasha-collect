@@ -13,7 +13,7 @@ Akasha Lens and exploration by Akasha Discovery.
 
 ## Role in the Ecosystem
 
-Akasha Collect acts as the system's **sensory interface to reality**.
+Akasha Collect acts as the system's sensory interface to reality.
 
 External APIs → Collectors → Artifacts → Lens → Discovery
 
@@ -53,14 +53,12 @@ Collectors defined in **akasha-apis** are executed by Akasha Collect.
 
 Each collector retrieves external data and produces normalized artifacts.
 
-Example:
+Examples include:
 
-```
-collect github repositories
-collect research papers
-collect knowledge graph entities
-collect astronomical data
-```
+- collecting GitHub repositories
+- collecting research papers
+- collecting knowledge graph entities
+- collecting astronomical data
 
 Artifacts are stored in structured formats for downstream systems.
 
@@ -80,4 +78,4 @@ Creation belongs to Forge.
 
 ---
 
-Akasha Collect expands the system's perception of the world.
+This repository participates in the **Akasha ecosystem** and is described by `repo-manifest.yaml`.
