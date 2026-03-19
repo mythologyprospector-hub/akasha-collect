@@ -79,3 +79,7 @@ Creation belongs to Forge.
 ---
 
 This repository participates in the **Akasha ecosystem** and is described by `repo-manifest.yaml`.
+
+---
+
+This repository participates in the Akasha ecosystem and is described by repo-manifest.yaml.
