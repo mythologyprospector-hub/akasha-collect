@@ -3,73 +3,72 @@ repo:
   ecosystem: akasha
   version: 0.1.0
   status: experimental
-
 identity:
   role: collector
   layer: ingestion
-  description: >
-    Execution layer for running API collectors and gathering
-    external artifacts for the Akasha ecosystem.
+  description: 'Execution layer for running API collectors and gathering external
+    artifacts for the Akasha ecosystem.
 
+    '
 ownership:
   steward: human
   approval_required: true
   governance: akasha-axioms
-
 interfaces:
   consumes:
-    - akasha-apis
-    - akasha-world
-    - akasha-constellation
-
+  - akasha-apis
+  - akasha-world
+  - akasha-constellation
   produces:
-    - normalized_artifacts
-    - collection_logs
-    - source_metadata
-
+  - normalized_artifacts
+  - collection_logs
+  - source_metadata
 capabilities:
-  - collector_execution
-  - artifact_normalization
-  - external_ingestion
-  - source_tracking
-
+- collector_execution
+- artifact_normalization
+- external_ingestion
+- source_tracking
 inputs:
   artifact_types:
-    - api_response
-    - dataset
-    - repository_metadata
-    - document_metadata
-
+  - api_response
+  - dataset
+  - repository_metadata
+  - document_metadata
 outputs:
   artifact_types:
-    - artifact
-    - normalized_record
-    - collection_event
-
+  - artifact
+  - normalized_record
+  - collection_event
 alignment:
   axioms_required: true
   canonical_structure: true
   naming_convention: akasha-world/NAMING.md
-
 reflection:
   self_describing: true
   drift_detection: true
   quine_capable: false
-
 dependencies:
   required_repos:
-    - akasha-axioms
-    - akasha-world
-    - akasha-constellation
-    - akasha-apis
-
+  - akasha-axioms
+  - akasha-world
+  - akasha-constellation
+  - akasha-apis
 execution:
   runtime: human-in-the-loop
   automation_level: assisted
-
 metadata:
   created_by: akasha
   maintained_by: steward
-  purpose: >
-    Gather external data through standardized collectors and convert
-    it into artifacts usable by Lens, Discovery, and Record.
+  purpose: 'Gather external data through standardized collectors and convert it into
+    artifacts usable by Lens, Discovery, and Record.
+
+    '
+name: akasha-collect
+type: module
+status:
+  maturity: experimental
+  confidence: low
+  active: true
+role: concept
+domain: systems
+depends_on: []
