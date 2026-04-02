@@ -74,3 +74,8 @@ domain: systems
 depends_on:
 - akasha-apis
 - akasha-world
+
+engine:
+  family: observation
+  class: intake_engine
+  role: unknown
